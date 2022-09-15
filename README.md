@@ -17,3 +17,4 @@ In this dummy example we are using Keras to train our model. Inference should be
   - Prepare a docker image that will include:
     - ONNX format trained model under directory name 'model' (as suggested in the example)
     - Inference script that will output prediction.csv (save it under '/output' directory location)
+    - Make sure a copy of ONNX format model copied under '/output' directory location
