@@ -16,5 +16,5 @@ In this dummy example we are using Keras to train our model. Inference should be
   - Convert any framework trained model into ONNX format. ( Using tf2onnx in this case)
   - Prepare a docker image that will include:
     - ONNX format trained model under directory name 'model' (as suggested in the example)
-    - Inference script that will output prediction.csv (save it under '/output' directory location)
-    - Make sure a copy of ONNX format model copied under '/output' directory location
+    - Inference script that will output prediction.csv (save it under '/output' mounted directory location)
+    - Make sure a copy of ONNX format model copied under '/output' mounted directory location
