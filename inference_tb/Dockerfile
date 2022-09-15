@@ -9,10 +9,6 @@ RUN mkdir model
 
 COPY model ./model/
 COPY inference.py ./inference.py
+COPY entrypoint.sh ./entrypoint.sh
 
-
-ENTRYPOINT ["python3", "./inference.py"]
-
-USER root
-RUN mkdir -p /output
-RUN mkdir -p /input
+ENTRYPOINT ["sh", "./entrypoint.sh"]
