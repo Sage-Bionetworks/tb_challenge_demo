@@ -18,7 +18,8 @@ def prediction(input_path, model_path):
 
 if __name__ == '__main__':
     
-    input_path = '/input/*' #holdout sample file path
+    #holdout sample file path 
+    input_path = '/input/*' # Utilize 'meta_info.csv' & 'raw_test_data/*.wav' according to your preprocessing logic
     model_path = 'model/*.onnx' #model path
 
 	prediction(input_path, model_path)
