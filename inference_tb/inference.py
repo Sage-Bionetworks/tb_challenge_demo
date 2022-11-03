@@ -19,7 +19,11 @@ def prediction(input_path, model_path):
 if __name__ == '__main__':
     
     #holdout sample file path 
-    input_path = '/input/*' # Utilize 'meta_info.csv' , 'raw_test_data/*.wav' according to your preprocessing logic
+    input_path = '/input/*' # Utilize {'meta_info.csv'  'raw_test_data/*.wav'} according to your preprocessing logic
+
+    # In SC2 you may also load CODA_TB_Clinical_Meta_Info_Test.csv
+    # however attempting to load it in SC1 will result in failure
+
     model_path = 'model/*.onnx' #model path
 
 	prediction(input_path, model_path)
